@@ -21,6 +21,18 @@ const skills = ["Python","Haskell","Systems thinking"];
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
     <title>{pageTitle}</title>
+
+    <style>
+      h1 {
+        color: purple;
+        font-size: 4rem;
+      }
+
+      .skill {
+      color: green;
+      font-weight: bold;
+      }
+    </style>
   
   </head>
   <body>
@@ -37,11 +49,11 @@ const skills = ["Python","Haskell","Systems thinking"];
     <p>My skills are:</p>
     <ul>
       {skills.map((skill) => (
-        <li>{skill}</li>
+        <li class="skill" >{skill}</li>
       ))}
     <ul>
-		<li>Go to <a href="/">HOME</a></li>
-		<li>Go to <a href="/blog/">BLOG</a></li>
 	</ul>
+  <li>Go to <a href="/">HOME</a></li>
+  <li>Go to <a href="/blog/">BLOG</a></li>
   </body>
 </html>
